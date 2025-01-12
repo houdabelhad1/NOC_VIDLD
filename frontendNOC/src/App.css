@@ -1,0 +1,85 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('./assets/image1.jpg'); /* Remplacez par le chemin réel de votre image */
+  background-size: cover; /* L'image couvre toute la page */
+  background-position: center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px; /* Ajout d'espacement du haut */
+  padding-bottom: 50px; /* Ajout d'espacement du bas */
+}
+
+/* Container pour la carte du formulaire */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Ajout d'un fond blanc semi-transparent */
+  padding: 60px; /* Augmenter l'espacement interne */
+  border-radius: 20px; /* Coins arrondis plus prononcés */
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+  width: 100%;
+  max-width: 600px; /* Limite la largeur de la carte */
+  text-align: center;
+  color: #333;
+  margin: 0 auto; /* Centrer la carte horizontalement */
+}
+
+/* Champs de saisie et boutons */
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #4CAF50; /* Vert médicamenteux */
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50; /* Vert doux */
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049; /* Vert plus foncé au survol */
+}
+
+/* Titres et texte centré */
+h1 {
+  color: #333;
+  font-size: 2rem; /* Agrandir la taille du titre */
+  margin-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Liens de navigation pour changer de page */
+.link-button {
+  background-color: transparent;
+  color: #4CAF50;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.link-button:hover {
+  color: #45a049;
+}
