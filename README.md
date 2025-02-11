@@ -1,3 +1,4 @@
+![Spring Boot](https://miro.medium.com/v2/resize:fit:640/format:webp/1*ljHUhFnaBissdRBe7DIo6g.png)
 # Nurse on Call
 
 Nurse on Call est une application où les patients peuvent rechercher et réserver des infirmières pour des soins à domicile. Ce projet a été développé dans le cadre d'un projet de classe, et il vise à offrir une solution pratique pour les soins de santé à domicile.
