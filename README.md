@@ -32,12 +32,29 @@ Une nouvelle version du projet a été commencée afin de repartir de zéro et d
 
 Vous pouvez suivre les progrès de cette version ici : https://github.com/houdabelhad1/NOC-NurseOnCall
 
+## Technologies utilisées
+
+- **Backend** : Spring Boot
+- **Frontend** : React JS
+
 ## Objectif
 
 Le but de ce projet est de partager notre travail avec la communauté et de mettre en place une solution de soins de santé à domicile efficace, tout en apprenant et en améliorant continuellement nos compétences en développement.
+
+## Contributeurs
+
+- **Houda Belhad**
+- **Salma Boughanja**
+- **Asmae Bourbiaa**
+
+## Supervisé par
+
+- **Monsieur Bouabid Ouahidi**  
+  Faculté des Sciences, Université Mohammed V, Rabat  
+  Master Ingénierie du Développement Logiciel et Décisionnel
 
 ## Installation
 
 1. Clonez le projet :
    ```bash
-   git clone https://github.com/houdabelhad1/NOC_V1.git
+   git clone https://github.com/houdabelhad1/NOC_VIDLD.git
