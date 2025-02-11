@@ -1,0 +1,100 @@
+/* Style pour le conteneur de l'image de fond */
+body{
+    background-image: url('../assets/image1.jpg'); /* Chemin relatif correct */
+    background-size: cover; /* Couvre toute la zone disponible */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    min-height: 100vh; /* Prend toute la hauteur de la page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+}
+
+  
+  /* Style pour le conteneur du formulaire */
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc légèrement transparent */
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  /* Style pour les titres */
+  .form-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form-container p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Style pour les groupes de formulaire */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Style pour les boutons radio */
+  .radio-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+  }
+  
+  /* Style pour le bouton "Go to Login" */
+.btn-login {
+  background-color: #00b4d8 !important;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-login:hover {
+  background-color: #0096c7 !important; /* Une teinte légèrement plus foncée pour le survol */
+}
+
+/* Style pour le bouton "Register" */
+.btn-register {
+  background-color: #00b4d8 !important;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-register:hover {
+  background-color: #0096c7 !important; /* Une teinte légèrement plus foncée pour le survol */
+}

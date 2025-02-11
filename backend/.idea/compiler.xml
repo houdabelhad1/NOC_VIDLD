@@ -7,6 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-service" />
+        <module name="my-llama" />
+        <module name="discovery-service" />
+        <module name="gateway-service" />
       </profile>
       <profile name="Annotation profile for patient-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -17,11 +21,34 @@
         </processorPath>
         <module name="patient-service" />
         <module name="user-service" />
+        <module name="nurse-service" />
+        <module name="notification-service" />
+      </profile>
+      <profile name="Annotation profile for appointment-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="appointment-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dialogflow-webhook" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="appointment-service" options="-parameters" />
+      <module name="config-service" options="-parameters" />
+      <module name="dialogflow-webhook" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="my-llama" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="nurse-service" options="-parameters" />
       <module name="patient-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>

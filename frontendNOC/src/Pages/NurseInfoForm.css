@@ -1,0 +1,118 @@
+/* Style pour le conteneur de l'image de fond */
+body {
+    background-image: url('../assets/image1.jpg'); /* Chemin relatif correct */
+    background-size: cover; /* Couvre toute la zone disponible */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    min-height: 100vh; /* Prend toute la hauteur de la page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+}
+
+/* Style pour la carte */
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc légèrement transparent */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Style pour l'en-tête de la carte */
+.card-header {
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.card-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Style pour le contenu de la carte */
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style pour la grille du formulaire */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+/* Style pour les groupes de formulaire */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond légèrement transparent */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Style pour le groupe de boutons radio */
+.radio-group {
+    display: flex;
+    gap: 16px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Style pour le bouton de soumission */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Vert plus foncé au survol */
+}
+
+/* Style pour le message */
+.message {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+}

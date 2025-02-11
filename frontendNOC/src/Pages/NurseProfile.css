@@ -1,0 +1,43 @@
+/* NurseProfile.css */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Make the card take full height */
+  }
+  
+  .card-img-top {
+    height: 300px;
+    object-fit: cover; /* Ensure the image fits well */
+  }
+  
+  .card-body {
+    flex: 1; /* Allow the card body to take remaining space */
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    margin-bottom: 15px; /* Add spacing between form inputs */
+  }
+  
+  .btn-primary {
+    width: 100%; /* Make the button full width */
+    padding: 10px;
+    font-size: 1rem;
+  }

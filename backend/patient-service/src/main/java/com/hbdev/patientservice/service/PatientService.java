@@ -28,7 +28,7 @@ public class PatientService {
         }
         if (file != null && !file.isEmpty()) {
             try {
-                String filePath = storeCinDocument(patient.getId(), file);  // Assurez-vous que cette méthode est définie
+                String filePath = storeCinDocument(patient.getId(), file);
                 patient.setCinDocumentPath(filePath);
             } catch (IOException e) {
                 throw new RuntimeException("Erreur lors de l'enregistrement du fichier : " + e.getMessage());
@@ -42,7 +42,6 @@ public class PatientService {
                 .orElseThrow(() -> new RuntimeException("Patient introuvable"));
     }
 
-    // Cette méthode doit être correctement définie ici
     private static final String UPLOAD_DIR = "C:\\Users\\HoudHoud Belhad\\Documents\\uploads";
 
     public String storeCinDocument(Long patientId, MultipartFile file) throws IOException {
@@ -53,5 +52,9 @@ public class PatientService {
         File destinationFile = new File(UPLOAD_DIR, fileName);
         file.transferTo(destinationFile);
         return destinationFile.getAbsolutePath();
+    }
+    public Patient findById(Long id) {
+        return patientRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Patient not found"));
     }
 }

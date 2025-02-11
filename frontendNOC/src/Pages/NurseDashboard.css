@@ -1,0 +1,120 @@
+/* Structure principale */
+body{
+  background: #f8f9fa;
+}
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Sidebar fixe */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  background: white;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Contenu principal */
+.main-content {
+  margin-left: 250px;
+  flex-grow: 1;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Pleine largeur pour les composants */
+
+
+.notifications-container {
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.care-reports-container{
+  width: 1000px;
+  max-width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-container{
+  width: 1050px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.profile-container{
+  width: 1050px;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+/* Adaptation du calendrier */
+.fc {
+  width: 100% !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.active {
+    transform: translateX(0);
+  }
+}
+/* Pleine largeur pour les formulaires */
+.full-width-form, 
+.recent-reports {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Espacement amélioré */
+.report-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Adaptation des champs de formulaire */
+.form-control {
+  width: 100%;
+}
+
+/* Pour les petits écrans */
+@media (max-width: 992px) {
+  .main-content {
+    padding: 20px;
+  }
+  
+  .profile-container,
+  .schedule-container,
+  .notifications-container,
+  .care-reports-container {
+    padding: 20px;
+  }
+}
